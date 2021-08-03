@@ -1,0 +1,22 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "*"
+sqlalchemy = "*"
+psycopg2-binary = "*"
+alembic = "*"
+python-dotenv = "*"
+
+[dev-packages]
+flake8 = "*"
+black = "*"
+uvicorn = "*"
+
+[requires]
+python_version = "3.7"
+
+[pipenv]
+allow_prereleases = true
