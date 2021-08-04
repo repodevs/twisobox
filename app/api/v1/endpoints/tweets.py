@@ -17,5 +17,5 @@ def create_tweet(
     """
     Create new tweet.
     """
-    tweet = repository.tweet.create(db, obj_in=tweet_in)
+    tweet = repository.tweet.publishTweet(db, obj_in=tweet_in)
     return tweet
