@@ -19,7 +19,7 @@ def read_timeline_user(
         raise HTTPException(
             status_code=404, detail=f"User with username `{username}` not found!"
         )
-    timelines = repository.timeline.get_by_sender_id(
-        db, sender_id=user.id, skip=skip, limit=limit
+    timelines = repository.timeline.get_by_username(
+        db, user=user, skip=skip, limit=limit
     )
     return timelines
